@@ -1,4 +1,5 @@
-<html lang="en">
+<!doctype html>
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -6,8 +7,32 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>🎮 나의 게이밍 세팅 아카이브</h1>
-    <p>서버와 HTML이 성공적으로 연결되었습니다!</p>
+    <div class="container">
+      <h1>🎮 Gaming Settings Archive</h1>
+
+      <div class="input-section">
+        <input
+          type="text"
+          id="gameName"
+          placeholder="게임 이름 (예: 배그, 롤)"
+        />
+        <input
+          type="number"
+          id="mouseDpi"
+          placeholder="마우스 DPI (예: 1600)"
+        />
+        <input type="text" id="sensitivity" placeholder="인게임 감도" />
+        <select id="gripStyle">
+          <option value="Palm">팜 그립 (Palm)</option>
+          <option value="Claw">클로 그립 (Claw)</option>
+          <option value="Fingertip">핑거팁 (Fingertip)</option>
+        </select>
+        <button onclick="saveSetting()">세팅 저장하기</button>
+      </div>
+
+      <hr />
+      <div id="settingsList" class="settings-list"></div>
+    </div>
 
     <script src="script.js"></script>
   </body>
