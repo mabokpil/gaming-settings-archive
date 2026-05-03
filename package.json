@@ -1,0 +1,24 @@
+{
+  "name": "gaming-settings-archive",
+  "version": "1.0.0",
+  "description": "게임 설정 저장 프로그램",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mabokpil/gaming-settings-archive.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/mabokpil/gaming-settings-archive/issues"
+  },
+  "homepage": "https://github.com/mabokpil/gaming-settings-archive#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
